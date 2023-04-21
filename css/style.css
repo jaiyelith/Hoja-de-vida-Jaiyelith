@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #96d1e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 35px 55px rgba(0, 0, 0, 0, 1);
+}
+
+.contenedor .contenedor-izq {
+  position: relative;
+  background: #347182;
+  padding: 40px;
+}
+
+.perfil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #4d899a;
+}
+
+.perfil .foto {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.perfil .foto img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil h2 {
+  color: whitesmoke;
+  font-size: 1.4em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.perfil h2 span {
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.contacto {
+  padding-top: 40px;
+}
+
+.titulo {
+  color: bisque;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contacto ul {
+  position: relative;
+}
+
+.contacto ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contacto ul li .icono {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #96d1e3;
+}
+
+.contacto ul li span {
+  color: white;
+  font-weight: 300;
+}
+
+.barra {
+  width: 250px;
+  height: 10px;
+  background: #96d1e3;
+  border-radius: 10px;
+  box-shadow: 20px 25px 45px rgba(255, 255, 255, 0.5);
+}
+
+.progreso {
+  width: var(--w);
+  height: 100%;
+  border-radius: 10px;
+  background: #65a1b3;
+  animation: Aumentar 5s ease;
+}
+
+@keyframes Aumentar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--w);
+  }
+}
+
+.titulo-habilidad {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.hobies ul {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.contenedor .contenedor-der {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.menu {
+  background-color: #7eb9cb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu- {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.seccion {
+  margin-left: 1rem;
+}
+
+.item {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4 ease;
+}
+
+.item:hover {
+  color: #96d1e3;
+}
+
+.informacion-personal {
+  margin-bottom: 50px;
+}
+
+.personal{
+  display: flex;
+  text-align: justify;
+}
+
+.informacion-personal:last-child {
+  margin-bottom: 0;
+}
+
+.titulo-2 {
+  color: #347182;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.informacion-personal .caja {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.informacion-personal .caja .tiempo {
+  min-width: 150px;
+}
+
+.informacion-personal .caja .tiempo h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 400;
+}
+
+.informacion-personal .caja .informacion h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.empresa {
+  font-size: 10px;
+  max-width: 100px;
+}
+
+.cliente {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.proyectos ul {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding-top: 1%;
+}
+
+.servicios {
+  display: grid;
+  margin-right: 100px;
+}
+
+.paola {
+  display: flex;
+  justify-content: center;
+}
+
+.cliente {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cliente:hover {
+  filter: blur(2px);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  filter: none;
+}
